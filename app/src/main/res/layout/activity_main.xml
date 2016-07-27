@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.avigezerit.inchuckwetrust.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/viewToSave"
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="0.70">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/frame"/>
+
+            <TextView
+                android:id="@+id/creditTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text=""
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/quoteTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center_vertical"
+                android:text="Chucking..."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+
+            <ImageView
+                android:id="@+id/hatIV"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_chuck_head" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/shareBtns"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.10"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/sBtnFace"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/roundbtn"
+                    android:backgroundTint="@color/btnFace" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_facbk" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/sBtnWhap"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/roundbtn"
+                    android:backgroundTint="@color/btnWhap" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_whap" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/sBtnShare"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/roundbtn"
+                    android:backgroundTint="@color/btnShare" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_share" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_weight="0.15"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+
+            <Button
+                android:id="@+id/getRandBtn"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/btn" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
